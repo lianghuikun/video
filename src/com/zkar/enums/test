@@ -1,0 +1,916 @@
+0               DPSDK_RET_SUCCESS                   成功
+1               DPSDK_RET_SERIALIZE_PDU_FAILED      协议解析失败
+2               DPSDK_RET_SENDDATA_FAILED           数据发送失败
+3               DPSDK_RET_NET_CONNECT_FAILED        连接远端失败
+4               DPSDK_RET_ALREADY_LOGIN             登录已存在
+5               DPSDK_RET_ALREADY_LOGOUT            已登出
+6               DPSDK_RET_SERIALIZE_XML_FAILED      Xml解析失败
+7               DPSDK_RET_NODE_NO_RIGHT             无操作权限
+8               DPSDK_RET_UNKNOW_DEVICE             未知设备
+9               DPSDK_RET_UNKNOW_CHANNEL            未知通道
+10              DPSDK_RET_DEVICE_OFFLINE            设备离线
+11              DPSDK_RET_RTSP_CONNECT_FAILED       rtsp连接失败
+12              DPSDK_RET_RTP_LISTEN_FAILED         rtp监听失败
+13              DPSDK_RET_RTP_CONNECT_FAILED        rtp连接失败
+14              DPSDK_RET_PARSE_TRANSPORT_FAILED    rtsp解析端口失败
+15              DPSDK_RET_ALREADY_CANCELED          命令已被取消
+16              DPSDK_RET_UNKNOWN_SESSION           无效的session fixme:检查已有情况统一为此应答
+17              DPSDK_RET_TALK_INNVALIDPARAM        对讲参数有误
+18              DPSDK_RET_TALK_NOT_SUPPORT          对讲不支持
+19              DPSDK_RET_DMSSESSION_NOT_FOUND      没找到对应的dmsSession
+20              DPSDK_RET_ADSSESSION_NOT_FOUND      未找到ADS
+21              DPSDK_RET_ADSSESSION_NOT_LOGIN      未登录成功ADS
+22              DPSDK_RET_DATABASE_NO_RECORD        没有找到ALARM相关记录
+23              DPSDK_RET_ALARMTYPE_NOT_MATCH       报警类型不匹配
+24              DPSDK_RET_PLAYBACK_SESSION_NOT_FOUND    无法找到回放会话
+25              DPSDK_RET_PLAYBACK_UNKNOW_PLAYTYPE      无法区分播放类型
+26              DPSDK_RET_PLAYBACK_NETSDK_SEEK_FAIL     网络SDK的seek命令失败
+27              DPSDK_RET_PLAYBACK_SEEK_SIZE_ERROR      回放定位的size错误
+28              DPSDK_RET_PLAYBACK_SEEK_TIME_ERROR      回放定位的时间错误
+29              DPSDK_RET_PLAYBACK_DEVICE_NOT_FOUND     回放时没有找到想要的设备
+30              DPSDK_RET_PLAYBACK_PLAY_REPEAT          该通道只允许回放一路
+31              DPSDK_RET_INVALID_CONFIGTYPE            该配置信息的类型不支持
+32              DPSDK_RET_UNSUPPORTED_STREAM            该码流类型不支持
+33              DPSDK_RET_PLAYBACK_NOTFIND_DEV          设备信息未找到
+34              DPSDK_RET_PLAYBACK_PARAM                回放参数错误
+35              DPSDK_RET_PLAYBACK_PARAM_CAMERA         回放未知摄像头
+36              DPSDK_RET_FTPSERVER_NOT_FIND            FTP服务器没找到
+37              DPSDK_RET_FTPCURL_ERROR                 调用curl返回错误
+38              DPSDK_RET_FTPCURL_LOCALFILE_NOT_OPEN    调用curl返回未找到本地文件
+39              DPSDK_RET_FTPCURL_LOCALFILE_NOT_READ    调用curl返回打开本地文件出错
+40              DPSDK_RET_FTPCURL_FTPFILE_ERROR         调用curl返回操作远程文件出错
+41              DPSDK_RET_FTPCURL_FREE_ERROR            调用curl返回释放出错
+42              DPSDK_RET_PCS_ERROR                     PCS发生错误
+43              DPSDK_RET_PES_ERROR                     PES发生错误
+44              DPSDK_RET_PES_NOT_LOGIN                 未登陆到PES
+45              DPSDK_RET_PES_ENCODE_AHSOTCMD_FAILED    报警主机命令组包失败
+46              DPSDK_RET_PES_ENCODE_DCTRL_FAILED       门禁命令组包失败
+47              DPSDK_RET_PES_ENCODE_PGRID_FAILED       电网命令组包失败
+48              DPSDK_RET_CHANNEL_EMPTY                 通道号为空
+49              DPSDK_RET_MSG_EMPTY                     处理消息为空
+50              DPSDK_RET_MSG_INVALID_CMD               未定义的消息操作
+51              DPSDK_RET_DECODE_PDU_FAILED             协议解析失败
+52              DPSDK_RET_SENDDATA_EMPTY                发送数据为空
+53              DPSDK_RET_PESSESSION_NOT_FOUND          没找到对应的pesSession
+54              DPSDK_RET_ALARMREPORT_NEW_FAILED        报警消息中内存申请失败
+55              DPSDK_RET_PCS_NOT_LOGIN                  未登陆到PCS
+56              DPSDK_RET_RTSPMDL_NOT_FIND              没找到对应的RTSPMDL
+57              DPSDK_RET_RTSPMSG_INVALID_CMD           未定义的RTSP消息操作
+58              DPSDK_RET_LOAD_XML                      解析Xml失败
+59              DPSDK_RET_CONFIGEX_LOGIN_FAIL           设备登陆失败
+60
+    DPSDK_RET_CONFIGEX_LOGINOUT_FAIL
+            设备登出失败
+
+61
+    DPSDK_RET_NETSDK_ERROR
+            NetSDK返回失败
+
+62
+    DPSDK_RET_DEVCONFIG_STRUCT_UNABLE_OPERATOR
+            该结构不支持该操作
+
+63
+    DPSDK_RET_LOCAL_INVALID_USERNAME
+            本地用户名无效
+
+64
+    DPSDK_RET_LOCAL_INVALID_PASSWORD
+            本地密码无效
+
+65
+    DPSDK_RET_CMS_RET_ERROR
+    CMS 返回错误
+
+66
+    DPSDK_RET_DMS_RET_ERROR
+    DMS 返回错误
+
+67
+    DPSDK_RET_PCS_RET_ERROR
+    PCS 返回错误
+
+68
+    DPSDK_RET_RTSP_RET_ERROR
+    RTSP 返回错误
+
+69
+    DPSDK_RET_CMS_ERR_NOT_FOUND
+    CMS 返回错误-- 未找到
+
+70
+    DPSDK_RET_RTSP_DISCONNECTED
+            RTSP链接断开
+
+1001
+    DPSDK_CORE_ERROR_NOT_SUPPORT
+            不支持
+
+1002
+    DPSDK_CORE_ERROR_GET_MEMORY_FAIL
+            获取内存失败
+
+1003
+    DPSDK_CORE_ERROR_WITHOUT_CREATE
+            没有创建
+
+1004
+    DPSDK_CORE_ERROR_CREATE_FAIL
+            创建失败
+
+1005
+    DPSDK_CORE_ERROR_INIT_FAIL
+            初始化失败
+
+1006
+    DPSDK_CORE_ERROR_UINIT_FAIL
+            反初始化失败
+
+1007
+    DPSDK_CORE_ERROR_WITHOUT_INIT
+            没有初始化
+
+1008
+    DPSDK_CORE_ERROR_INVALID_HANDLE
+            无效的句柄
+
+1009
+    DPSDK_CORE_ERROR_INVALID_PARAM
+            无效的参数
+
+1010
+    DPSDK_CORE_ERROR_TIMEOUT
+            操作超时
+
+1011
+    DPSDK_CORE_ERROR_SYNCFUN_ERROR
+            同步调用错误
+
+1012
+    DPSDK_CORE_ERROR_SERIES
+            串行化失败
+
+1013
+    DPSDK_CORE_ERROR_FOUND_FAIL
+            查找失败
+
+1014
+    DPSDK_CORE_ERROR_SIZE_ZERO
+            大小为零
+
+1015
+    DPSDK_CORE_ERROR_PARSE_ALARM_ENABLE_FAIL
+            解析报警布控失败
+
+1016
+    DPSDK_CORE_ERROR_GET_FREEPORT_FAIL
+            获取空闲Port失败
+
+1017
+    DPSDK_CORE_ERROR_INVALID_SEQ
+            无效的SEQ
+
+1018
+    DPSDK_CORE_ERROR_WITHOUT_LOGIN
+            没有登录
+
+1019
+    DPSDK_CORE_ERROR_WITHOUT_LODEGROUP
+            没有加载组织信息
+
+1020
+    DPSDK_CORE_ERROR_ERROR_LEN
+            长度错误
+
+1021
+    DPSDK_CORE_ERROR_RANGE_OVER
+            范围越界
+
+1022
+    DPSDK_CORE_ERROR_CAPTURE_FAIL
+            抓图失败
+
+1023
+    DPSDK_CORE_ERROR_OPEN_FILE_FAIL
+            打开文件失败
+
+1024
+    DPSDK_CORE_ERROR_SAVE_FILE_FAIL
+            保存文件失败
+
+1025
+    DPSDK_CORE_ERROR_VIDEO_NOT_PLAYING
+            还没有开始播放视频
+
+1026
+    DPSDK_CORE_ERROR_STARTRECORD_FAIL
+            实时视频录制错误
+
+1027
+    DPSDK_CORE_ERROR_STOPRECORD_FAIL
+            停止实时视频录制错误
+
+1028
+    DPSDK_CORE_ERROR_SETOSDTXT_FAIL
+            设置osd文本信息错误
+
+1029
+    DPSDK_CORE_ERROR_CLEANUP_OSDTXT_FAIL
+            清除osd信息失败
+
+1030
+    DPSDK_CORE_ERROR_OPENWINDOW_FAIL
+    开窗失败(目前暂定最大开4窗)
+
+
+1000001
+    SERVER_RET_CMS_ERR_QUERY_PU_SUCCESS
+            查询全部录像时,只有前端查询成功
+
+1000002
+    SERVER_RET_CMS_ERR_QUERY_CENTER_SUCCESS
+            查询全部录像时,只有中心查询成功
+
+1000421
+    SERVER_RET_CMS_ERR_NO_USER_ID
+            用户ID不存在
+
+1000422
+    SERVER_RET_CMS_ERR_NO_USER_NAME_TO_ID
+            该用户名匹配不到ID
+
+1000423
+    SERVER_RET_CMS_ERR_NO_USER_NAME
+            用户名不存在
+
+1000424
+    SERVER_RET_CMS_ERR_PASSWORD_INVALID
+            密码无效
+
+1000425
+    SERVER_RET_CMS_ERR_INVALID_USER_ID
+            无效的用户ID
+
+1000426
+    SERVER_RET_CMS_ERR_USER_LOCKED
+            用户被锁定
+
+1000427
+    SERVER_RET_CMS_ERR_SESSION_EXIST
+            用户已经存在登录会话
+
+1000428
+    SERVER_RET_CMS_ERR_NO_SESSION
+            会话不存在
+
+1000429
+    SERVER_RET_CMS_ERR_SERVER_REGISTERED
+            服务已经注册
+
+1000430
+    SERVER_RET_CMS_ERR_SERVER_NOT_REGISTER
+            功能服务没有注册
+
+1000431
+    SERVER_RET_CMS_ERR_INVALID_CAMERA_ID
+            摄像头id无效
+
+1000432
+    SERVER_RET_CMS_ERR_NO_DEVICE
+            找不到设备
+
+1000433
+    SERVER_RET_CMS_ERR_MEDIA_SESSION_EXIST
+            媒体会话已存在
+
+1000434
+    SERVER_RET_CMS_ERR_GRANT_SESSION_EXIST
+            授权会话已存在
+
+1000435
+    SERVER_RET_CMS_ERR_NO_CAMERA_ROW
+            找不到摄像头表
+
+1000436
+    SERVER_RET_CMS_ERR_UNKNOWN_TYPE
+            无效的类型值
+
+1000437
+    SERVER_RET_CMS_ERR_TOO_MANY_GROUP_COUNT
+            用户从属的组太多
+
+1000438
+    SERVER_RET_CMS_ERR_TOO_MANY
+            数量太多
+
+1000439
+    SERVER_RET_CMS_ERR_EXIST_HIGH_USER
+            存在高级别用户
+
+
+1000521
+    SERVER_RET_CMS_ERR_NO_CONNECTION
+            连接不存在
+
+1000522
+    SERVER_RET_CMS_ERR_INVALID_SERVER
+            未在系统中登记的服务
+
+1000523
+    SERVER_RET_CMS_ERR_NO_DOMAIN
+            服务域不存在
+
+1000524
+    SERVER_RET_CMS_ERR_NO_SERVER_BEAN
+            服务对象不存在
+
+1000525
+    SERVER_RET_CMS_ERR_NO_MTS_TO_USE
+            没有MTS可用
+
+1000526
+    SERVER_RET_CMS_ERR_SESSION_DELETE
+            会话已经拆除
+
+1000527
+    SERVER_RET_CMS_ERR_SERVER_RECONNECT
+            功能服务正在重连
+
+1000528
+    SERVER_RET_CMS_ERR_ADD_CAMERA_FAILED
+            添加摄像头失败
+
+1000529
+    SERVER_RET_CMS_ERR_ADD_CLIENT_FAILED
+            添加客户端失败
+
+1000530
+    SERVER_RET_CMS_ERR_DATABASE_ACCESS_FAILED
+            数据库访问失败
+
+1000531
+    SERVER_RET_CMS_ERR_DATABASE_NO_RECORD
+            数据库没有记录
+
+1000532
+    SERVER_RET_CMS_ERR_DATA_TOO_LONG
+            数据太长了
+
+1000533
+    SERVER_RET_CMS_ERR_NO_GROUPS_OF_USER
+            没有找到用户所从属的组
+
+1000534
+    SERVER_RET_CMS_ERR_QUERY_RECORD_FAILED
+            查询录像失败
+
+1000535
+    SERVER_RET_CMS_ERR_OTHER_USER_PLAYBACK
+            其他用户在回放该摄像头
+
+1000536
+    SERVER_RET_CMS_ERR_REACH_PU_PLAYBACK_LIMIT
+            达到前端回放地限制
+
+1000537
+    SERVER_RET_CMS_ERR_NO_DMS_TO_USE
+            没有DMS可用
+
+1000538
+    SERVER_RET_CMS_ERR_DEV_GRANT_CHANGED
+            设备授权更改到其他服务
+
+1000539
+    SERVER_RET_CMS_ERR_ADD_DVR_FAILED
+            添加DVR失败
+
+1000540
+    SERVER_RET_CMS_ERR_GRANT_FAILED
+            授权到DMS失败
+
+1000541
+    SERVER_RET_CMS_ERR_SS_PLAYBACK_FAILED
+            SS回放失败
+
+1000542
+    SERVER_RET_CMS_ERR_REACH_SYSTEM_LIMIT
+            达到系统上限
+
+1000543
+    SERVER_RET_CMS_ERR_INVALID_DEVICE_PROVIDER
+            无效的设备厂家
+
+1000544
+    SERVER_RET_CMS_ERR_NO_URL
+            没有升级URL
+
+1000545
+    SERVER_RET_CMS_ERR_NO_SS_TO_USE
+            没有SS可用
+
+1000546
+    SERVER_RET_CMS_ERR_PU_QUERY_TIMEOUT
+            前端查询超时
+
+1000547
+    SERVER_RET_CMS_ERR_PU_QUERY_RECORD_FAILED
+            前端查询录像失败
+
+1000548
+    SERVER_RET_CMS_ERR_NO_MTS_FOR_DEVICE
+            没有和这个设备管理的MTS
+
+1000549
+    SERVER_RET_CMS_ERR_DEVICE_IN_TALKING
+            设备正在进行语音对讲
+
+1000550
+    SERVER_RET_CMS_ERR_DEVICE_NOT_TALKING
+            设备没有在进行语音对讲
+
+1000551
+    SERVER_RET_CMS_ERR_ENCODE_PDU
+    CMS在准备应答时候，进行Encode操作失败
+
+1000552
+    SERVER_RET_CMS_ERR_DECODE_PDU
+    CMS在准备应答时候，进行Decode操作失败
+
+1000553
+    SERVER_RET_CMS_ERR_NOT_FOUND_LOWER_DOMAIN
+            没有找到下级域
+
+1000554
+    SERVER_RET_CMS_ERR_NOT_LOGIN_LOWER_DOMAIN
+            未登陆下级域
+
+1000555
+    SERVER_RET_CMS_ERR_NO_RIGHT
+            无权限
+
+1000556
+    SERVER_RET_CMS_ERR_QUERY_ALARM_FAILED
+            查询报警失败
+
+1000557
+    SERVER_RET_CMS_ERR_DEIVCE_OFFLINE
+            设备不在线
+
+1000558
+    SERVER_RET_CMS_ERR_LOWER_DOMAIN_EXCEPTION
+            下级域异常
+
+1000559
+    SERVER_RET_CMS_ERR_ALARM_PRE_RECORD_OPENED
+            报警预录已经打开
+
+1000560
+    SERVER_RET_CMS_ERR_RECONNECT_DEVICE
+            功能服务正在重连设备
+
+1000561
+    SERVER_RET_CMS_ERR_SEND_FUN_SVR_REQ_FAIL
+            向功能服务器发送请求失败
+
+1000562
+    SERVER_RET_CMS_ERR_CU_START_RECORD_FAIL
+            开始录像失败
+
+1000563
+    SERVER_RET_CMS_ERR_CU_RECORING_NOW
+            正在录像
+
+1000564
+    SERVER_RET_CMS_ERR_CU_STOP_RECORD_FAIL
+            停止录像失败
+
+1000565
+    SERVER_RET_CMS_ERR_CU_OTHERUSER_RECORDING
+            其他用户正在录像
+
+1000566
+    SERVER_RET_CMS_ERR_CU_START_RECORD_RUNNING
+    开始录像失败，运行中
+
+1000567
+    SERVER_RET_CMS_ERR_CU_START_RECORD_LIMITE
+    开始录像失败，被禁止
+
+1000568
+    SERVER_RET_CMS_ERR_CU_START_RECORD_NO_SS
+    开始录像失败，没有可用的SS
+
+1000569
+    SERVER_RET_CMS_ERR_NO_PES_TO_USE
+            没有可用的PES服务器
+
+1000570
+    SERVER_RET_CMS_ERR_UNKNOWN_PROTOCOL
+            不支持的协议类型
+
+1000571
+    SERVER_RET_CMS_ERR_CONFIG_FILE_TIMEOUT
+            组配置文件过期
+
+1000572
+    SERVER_RET_CMS_ERR_NO_BOLCK
+            无可用的block
+
+
+1001401
+    SERVER_RET_DMS_ERR_HAS_NO_RIGHT
+            没有权限
+
+1001421
+    SERVER_RET_DMS_ERR_NO_PRIVILEGE
+            没有权限
+
+
+1001521
+    SERVER_RET_DMS_ERR_PTZ_FAILED
+            云台内部控制出错
+
+1001522
+    SERVER_RET_DMS_ERR_CONFIG_SET_FAILED
+            设备配置内部控制出错
+
+1001523
+    SERVER_RET_DMS_ERR_CONFIG_GET_FAILED
+            设备配置内部控制出错
+
+1001524
+    SERVER_RET_DMS_ERR_CAMERA_OCCUPY
+            摄像头被其他用户锁定
+
+1001525
+    SERVER_RET_DMS_ERR_PTZ_ACCESS_FAILED
+            象云台协商管理模块请求访问失败
+
+1001526
+    SERVER_RET_DMS_ERR_TCP_COMM_NO_CLIENT
+            用户连接没有绑定到授权的客户端
+
+1001527
+    SERVER_RET_DMS_ERR_CLIENT_UNIT_NOT_FOUND
+            没有找到没有添加过的客户端
+
+1001528
+    SERVER_RET_DMS_ERR_DEVICE_NOT_FOUND
+            设备没找到
+
+1001529
+    SERVER_RET_DMS_ERR_PRIVILEGE_NOT_FOUND
+            没有找到授权信息
+
+1001530
+    SERVER_RET_DMS_ERR_UNKNOWN_COMMAND
+            未知命令
+
+1001531
+    SERVER_RET_DMS_ERR_OCCUPY_BY_HIGHER_USER
+            被高级用户占用
+
+1001532
+    SERVER_RET_DMS_ERR_NORMAL_LOCK_FAILED
+            需要Server检查的Lock失败错误
+
+1001533
+    SERVER_RET_DMS_ERR_OCCUPY_BY_OTHER_USER
+            被其他用户占用
+
+1001534
+    SERVER_RET_DMS_ERR_NORMAL_UNLOCK_FAILED
+            需要Server检查的UnLock失败错误
+
+1001535
+    SERVER_RET_DMS_ERR_NO_DEVICE
+            没有设备
+
+1001536
+    SERVER_RET_DMS_ERR_NO_RIGHT
+            没有权限
+
+1001537
+    SERVER_RET_DMS_ERR_NOT_FOUND_LOWER_DOMAIN
+            没有找到下级域
+
+1001538
+    SERVER_RET_DMS_ERR_NOT_LOGIN_LOWER_DOMAIN
+            没有登录下级域
+
+1001539
+    SERVER_RET_DMS_ERR_QUERY_DIAGNOSIS_ID
+            查询视频诊断ID失败
+
+1001540
+    SERVER_RET_DMS_ERR_QUERY_DIAGNOSIS_TYPE_COUNT
+            查询视频诊断类型数目失败
+
+1001541
+    SERVER_RET_DMS_ERR_QUERY_DIAGNOSIS_INFO
+            查询视频诊断信息失败
+
+1001542
+    SERVER_RET_DMS_ERR_STOP_QUERY_DIAGNOSIS_INFO
+            停止视频诊断信息查询失败
+
+1001543
+    SERVER_RET_DMS_ERR_START_QUERY_PERSON_COUNT
+            开始查询人数统计信息失败
+
+1001544
+    SERVER_RET_DMS_ERR_QUERY_PERSON_COUNT
+            查询人数统计信息失败
+
+1001545
+    SERVER_RET_DMS_ERR_STOP_QUERY_PERSON_COUNT
+            停止人数统计信息查询失败
+
+
+1002520
+    SERVER_RET_VMS_ERR_FAILED
+    失败-其他原因
+
+1002521
+    SERVER_RET_VMS_ERR_ID_ALREADY_EXIST
+    NVD ID已存在
+
+1002522
+    SERVER_RET_VMS_ERR_INVALID_ID
+            无效的ID
+
+1002523
+    SERVER_RET_VMS_ERR_REACH_LIMIT
+            达到上限
+
+
+1003503
+    SERVER_RET_RTSP_ERR_SETUP_FAILED
+            RTSP建立失败
+
+
+1003521
+    SERVER_RET_RTSP_ERR_RECONNECT_DEVICE
+            正在重连设备
+
+
+1004721
+    SERVER_RET_ALARM_ERR_URL
+            错误的URL
+
+1004722
+    SERVER_RET_ALARM_ERR_RES
+            无效的数据
+
+1004723
+    SERVER_RET_ALARM_ERR_MDL_TYPE
+            无效的单元类型
+
+1004724
+    SERVER_RET_ALARM_ERR_SCHEME_INDEX
+            无效的预案索引
+
+1004725
+    SERVER_RET_ALARM_ERR_SCHEME_TYPE
+            无效的预案类型
+
+1004726
+    SERVER_RET_ALARM_ERR_SCHEME_STRING
+            预案字符串解析失败
+
+1004727
+    SERVER_RET_ALARM_ERR_ALARM_NODE
+            无效的报警节点
+
+
+1005421
+    SERVER_RET_MS_ERR_ALREADY_LOGIN
+            已经登录
+
+1005422
+    SERVER_RET_MS_ERR_INVALID_SESSION_ID
+            无效的会话ID
+
+1005423
+    SERVER_RET_MS_ERR_NOT_LOGIN
+            未登录
+
+1005424
+    SERVER_RET_MS_ERR_INVALID_CONNECTION
+            无效连接
+
+1005425
+    SERVER_RET_MS_ERR_INVALID_DEV_TYPE
+            无效的设备类型
+
+1005426
+    SERVER_RET_MS_ERR_INVALID_CAMERA_ID
+            无效的摄像头id
+
+1005427
+    SERVER_RET_MS_ERR_CAMERA_SESSION_EXIST
+            摄像头已经添加过
+
+1005428
+    SERVER_RET_MS_ERR_NO_CAMERA_SESSION
+            摄像头会话不存在
+
+1005429
+    SERVER_RET_MS_ERR_FIND_SAME_TOKEN
+            找到相同的token
+
+1005430
+    SERVER_RET_MS_ERR_UNKNOWN_RECORD_TYPE
+            无法识别的录像类型
+
+1005431
+    SERVER_RET_MS_ERR_INVALID_FILE_NAME
+            无效的录像文件名称
+
+1005432
+    SERVER_RET_MS_ERR_INVALID_TIME_VALUE
+            无效的录像时间值
+
+1005433
+    SERVER_RET_MS_ERR_NOT_FOUND_SESSION
+            没有找到会话
+
+1005434
+    SERVER_RET_MS_ERR_INVALID_RTSP_URL
+    无效的RTSP URL
+
+1005435
+    SERVER_RET_MS_ERR_PLAN_EXIST
+            计划已经存在
+
+
+1005521
+    SERVER_RET_MS_ERR_DEV_NOT_LOGIN
+            设备还未登录
+
+1005522
+    SERVER_RET_MS_ERR_SDK_OPERATE_FAILED
+            sdk调用失败
+
+1005523
+    SERVER_RET_MS_ERR_SESSION_USE_OUT
+            会话用完
+
+1005524
+    SERVER_RET_MS_ERR_RTSP_CONNECT_FAILED
+            rtsp连接失败
+
+1005525
+    SERVER_RET_MS_ERR_RTP_LISTEN_FAILED
+            RTP侦听失败
+
+1005526
+    SERVER_RET_MS_ERR_RTSP_SETUP_FAILED
+    RTSP Setup操作失败
+
+1005527
+    SERVER_RET_MS_ERR_RTSP_PLAY_FAILED
+    RTSP PLAY操作失败
+
+1005528
+    SERVER_RET_MS_ERR_ADD_RTP_SESSION_FAILED
+    添加RTP SESSION到serverbase失败
+
+1005529
+    SERVER_RET_MS_ERR_DISK_SPACE_NOT_ENOUGH
+            磁盘空间不足
+
+1005530
+    SERVER_RET_MS_ERR_OPEN_FILE_FAILED
+            文件打开失败
+
+1005531
+    SERVER_RET_MS_ERR_NOT_FOUND_RTSP_CLIENT
+            找不到RTSP客户端连接
+
+1005532
+    SERVER_RET_MS_ERR_RTSP_DISCONNECTED
+            RTSP连接断开
+
+1005533
+    SERVER_RET_MS_ERR_RECORD_QUERY_TIMEOUT
+            录像查询超时
+
+1005534
+    SERVER_RET_MS_ERR_SDK_CALLBACK_INVALID_DATA
+    sdk 返回数据不正确
+
+1005535
+    SERVER_RET_MS_ERR_SNAP_STORE_PATH_INVALID
+            设置的SS端SNAP存储路径有问题
+
+1005536
+    SERVER_RET_MS_ERR_SNAP_STORE_FILE_FAILED
+            SS在存储文件时候操作失败
+
+1005537
+    SERVER_RET_MS_ERR_SNAP_ENCODE_FAILED
+            SS在编码回复pdu时候失败
+
+1005538
+    SERVER_RET_MS_ERR_IFRAME_2_BMP
+            SS在转换I帧到BMP时候失败
+
+1005539
+    SERVER_RET_MS_ERR_DUPLICATE_PLAN_FOUND
+            重复的PlanId发现
+
+1005540
+    SERVER_RET_MS_ERR_SDK_CALLBACK_TIMEOUT
+    SDK调用Callback超时，没有返回数据
+
+1005541
+    SERVER_RET_MS_ERR_NOT_FOUND_SESSION_ID
+            未找到camera_session_id
+
+1005542
+    SERVER_RET_MS_ERR_INVALID_STREAM_TYPE
+            非法的码流类型
+
+1005543
+    SERVER_RET_MS_ERR_ADD_LIVECHANNEL_FAILED
+            添加直播频道失败
+
+1005544
+    SERVER_RET_MS_ERR_GET_TALKDECODE_FAILED
+            获取对讲格式失败
+
+1005545
+    SERVER_RET_MS_ERR_LOGIN_DEV_FAILED
+            登陆语音设备失败
+
+1005546
+    SERVER_RET_MS_ERR_NOT_MATCH_AUDIO_TYPE
+            音频格式不匹配
+
+1005547
+    SERVER_RET_MS_ERR_NOT_FOUND_DISK
+            未找到磁盘
+
+1005548
+    SERVER_RET_MS_ERR_NOT_FOUND_RECORD_PLAN
+            未找到录像计划
+
+
+1006404
+    SERVER_RET_PCS_ERR_NOT_FOUND
+            级联设备未下发
+
+1006406
+    SERVER_RET_PCS_ERR_NOT_ACCEPTABLE
+    级联订阅，本级PTS监听失败
+
+1006710
+    SERVER_RET_PCS_ERR_DEVICE_OFFLINE
+            设备断线
+
+1006713
+    SERVER_RET_PCS_ERR_DOMIAN_OFFLINE
+            下级域不在线
+
+1006714
+    SERVER_RET_PCS_ERR_PTS_CANNOT_PING
+            上级连接下级PTS失败
+
+1006715
+    SERVER_RET_PCS_ERR_NO_ACK
+            无应答
+
+
+1007001
+    SERVER_RET_FMS_ERR_RTMP_CLIENT_POOL_ALREADY_EXIST
+    RTMP client池已经存在
+
+1007002
+    SERVER_RET_FMS_ERR_NO_FREE_RTMPCLIENT,
+    RTMP Client池里面没有空闲的地址
+
+1007003
+    SERVER_RET_FMS_ERR_STARTSTREAM,
+    调用StartStream失败
+
+1007004
+    SERVER_RET_FMS_ERR_ADDMEDIA,
+    调用AddMedia失败
+
+1007005
+    SERVER_RET_FMS_ERR_DELMEDIA,
+    调用DelMedia失败
+
+1007006
+    SERVER_RET_FMS_ERR_STOPSTREAM,
+    调用StopStream失败
+
+
+1008001
+    SERVER_RET_ANA_ERR_CREATE
+            调用码流分析库的ANA_CreateStream失败
+
+1008002
+    SERVER_RET_MP3_ENC_INIT_FAILED
+            MP3编码库初始化失败
